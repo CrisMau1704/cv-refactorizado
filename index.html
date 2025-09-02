@@ -6,63 +6,65 @@
     <title>CV Cristian Illanes</title>
     <meta name="description" content="Currículum de Cristian Illanes, Técnico Superior en Sistemas Informáticos, especializado en desarrollo web con PHP, Laravel, Vue.js y MySQL.">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <!-- Enlace para accesibilidad -->
+    <a href="#main-content" class="skip-link" aria-label="Ir al contenido principal">Saltar al contenido principal</a>
 
-    <header>
-        <nav id="menu-nav" aria-label="Menú principal">
-            <ul id="menu-ul">
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#experiencia-laboral">Experiencia</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+    <header role="banner">
+        <nav id="menu-nav" role="navigation" aria-label="Menú principal">
+            <ul id="menu-ul" role="menubar">
+                <li role="none"><a role="menuitem" href="#sobre-mi">Sobre Mí</a></li>
+                <li role="none"><a role="menuitem" href="#experiencia-laboral">Experiencia</a></li>
+                <li role="none"><a role="menuitem" href="#habilidades">Habilidades</a></li>
+                <li role="none"><a role="menuitem" href="#proyectos">Proyectos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="main">
-            <img id="foto" src="images/B612_20240708_134954_569.jpg"  alt="Foto de Cristian Illanes" loading="lazy">
-           <h1>Cristian Mauricio Illanes Zambrano</h1>
+    <main id="main-content" role="main">
+        <section id="main" aria-labelledby="nombre">
+            <img id="foto" src="images/B612_20240708_134954_569.jpg"  
+                 alt="Foto de Cristian Illanes" role="img" aria-label="Foto de Cristian Illanes" loading="lazy">
+            <h1 id="nombre">Cristian Mauricio Illanes Zambrano</h1>
             <h2>Técnico Superior en Sistemas Informáticos</h2>
-            <aside class="contact-info">
-                <div class="contact-item">
-                    <img class="main-icon" src="images/map.svg" alt="Icono de ubicación" loading="lazy">
-                    <span>La Paz, Bolivia</span>
-                </div>
-                <div class="contact-item">
-                    <img class="main-icon" src="images/phone.svg" alt="Icono de teléfono" loading="lazy">
-                    <span>+591 60108969</span>
-                </div>
-                <div class="contact-item">
-                    <img class="main-icon" src="images/mail.svg" alt="Icono de correo" loading="lazy">
-                    <span>cristian@gmail.com</span>
-                </div>
+            
+            <aside class="contact-info" role="complementary" aria-label="Información de contacto">
+                <ul>
+                    <li class="contact-item">
+                        <img class="main-icon" src="images/map.svg" alt="" aria-hidden="true" loading="lazy">
+                        <span>La Paz, Bolivia</span>
+                    </li>
+                    <li class="contact-item">
+                        <img class="main-icon" src="images/phone.svg" alt="" aria-hidden="true" loading="lazy">
+                        <span>+591 60108969</span>
+                    </li>
+                    <li class="contact-item">
+                        <img class="main-icon" src="images/mail.svg" alt="" aria-hidden="true" loading="lazy">
+                        <span>cristian@gmail.com</span>
+                    </li>
+                </ul>
             </aside>
         </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
+        <section id="sobre-mi" aria-labelledby="sobre-mi-title">
+            <h2 id="sobre-mi-title">Sobre Mí</h2>
             <p>
                 Mi nombre es <strong>Cristian Mauricio Illanes Zambrano</strong>, soy del departamento de La Paz y
-                actualmente trabajo como Auxiliar Desarrollador de sistemas en una empresa de informatica.
+                actualmente trabajo como Auxiliar Desarrollador de sistemas en una empresa de informática.
                 Me especializo en el desarrollo de sistemas web utilizando tecnologías como PHP, JavaScript, Laravel y
-                Vue y bases de datos Mysql y Sql Server
+                Vue y bases de datos MySQL y SQL Server.
             </p>
             <p>
                 En mi tiempo libre disfruto aprender nuevas herramientas y metodologías relacionadas con el desarrollo
-                de software.
-                Me interesa especialmente el área de ciberseguridad, en la cual me gustaría profundizar mis
+                de software. Me interesa especialmente el área de ciberseguridad, en la cual me gustaría profundizar mis
                 conocimientos.
             </p>
-
         </section>
 
-        <section id="formacion">
-            <h2>Formación Académica</h2>
+        <section id="formacion" aria-labelledby="formacion-title">
+            <h2 id="formacion-title">Formación Académica</h2>
             <article>
                 <h3>Universidad Adventista de Bolivia</h3>
                 <p>Ingeniería de Sistemas (Febrero 2025 - Actualidad)</p>
@@ -81,8 +83,8 @@
             </article>
         </section>
 
-        <section id="experiencia-laboral">
-            <h2>Experiencia Laboral</h2>
+        <section id="experiencia-laboral" aria-labelledby="exp-title">
+            <h2 id="exp-title">Experiencia Laboral</h2>
             <article>
                 <h3>INFOACTIVA S.R.L.</h3>
                 <h4>Auxiliar y Desarrollador de sistemas</h4>
@@ -95,12 +97,11 @@
             </article>
         </section>
 
-
-       <section id="habilidades">
-            <h2>Habilidades</h2>
+        <section id="habilidades" aria-labelledby="skills-title">
+            <h2 id="skills-title">Habilidades</h2>
             <article>
                 <h3>Técnicas</h3>
-                <ul>
+                <ul aria-label="Lista de habilidades técnicas">
                     <li>PHP: Medio</li>
                     <li>JavaScript: Medio</li>
                     <li>Laravel: Intermedio - Avanzado</li>
@@ -112,7 +113,7 @@
             </article>
             <article>
                 <h3>Competencias Profesionales</h3>
-                <ul>
+                <ul aria-label="Competencias profesionales">
                     <li>Resolución de problemas: Alta</li>
                     <li>Trabajo en equipo: Alta</li>
                     <li>Adaptabilidad: Alta</li>
@@ -121,23 +122,23 @@
             </article>
             <article>
                 <h3>Idiomas</h3>
-                <ul>
+                <ul aria-label="Idiomas">
                     <li>Español: Nativo</li>
                     <li>Inglés: Básico</li>
                 </ul>
             </article>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
+        <section id="proyectos" aria-labelledby="projects-title">
+            <h2 id="projects-title">Proyectos</h2>
             <article>
                 <h3>Sistema de Restaurante</h3>
-                <p>Link: <a href="https://restaurant-front-blue.vercel.app/" target="_blank">restaurant-front-blue.vercel.app</a></p>
+                <p>Link: <a href="https://restaurant-front-blue.vercel.app/" target="_blank" aria-label="Abrir proyecto de restaurante en una nueva pestaña">restaurant-front-blue.vercel.app</a></p>
                 <p>Descripción: Sistema completo para gestión de pedidos, desarrollado en Laravel y Vue.js.</p>
             </article>
             <article>
                 <h3>Sistema de Gestión Infoactiva</h3>
-                <p>Link: <a href="https://infoactiva.com.bo/usuario.dwt.php" target="_blank">infoactiva.com.bo</a></p>
+                <p>Link: <a href="https://infoactiva.com.bo/usuario.dwt.php" target="_blank" aria-label="Abrir proyecto Infoactiva en una nueva pestaña">infoactiva.com.bo</a></p>
                 <p>Descripción: Sistema de gestión de solicitudes para la empresa Infoactiva, incluyendo módulos administrativos y de reportes.</p>
             </article>
             <article>
@@ -149,19 +150,21 @@
                 <p>Descripción: Sistema de inventario desarrollado en Laravel y Vue.js, gestionando equipos de computación, stock y reportes de existencias.</p>
             </article>
         </section>
-
     </main>
 
-    <footer>
-        <div class="footer-redes-div">
-            <a href="https://www.facebook.com/tuusuario"><img src="images/facebook.png" alt="Facebook" width="30" height="30" loading="lazy"></a>
-            <a href="https://www.instagram.com/tuusuario"><img src="images/instagram.png" alt="Instagram" width="30" height="30" loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/tuusuario"><img src="images/linke.png" alt="LinkedIn" width="30" height="30" loading="lazy"></a>
+    <footer role="contentinfo" aria-label="Pie de página">
+        <div class="footer-redes-div" aria-label="Redes sociales">
+            <a href="https://www.facebook.com/tuusuario" aria-label="Facebook de Cristian Illanes">
+                <img src="images/facebook.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/tuusuario" aria-label="Instagram de Cristian Illanes">
+                <img src="images/instagram.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/tuusuario" aria-label="LinkedIn de Cristian Illanes">
+                <img src="images/linke.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
+            </a>
         </div>
         <p>&copy; 2025 Cristian Illanes</p>
     </footer>
-
-
 </body>
-
 </html>
