@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    color: #091a33;
+    line-height: 1.6;
+}
+
+header {
+    background: #273c75;
+    padding: 10px 0;
+}
+
+#menu-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#menu-ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-ul li a:hover {
+    color: #e1b12c;
+}
+
+#main {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    margin: 15px auto;
+}
+
+#foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #273c75;
+}
+
+#main h1 {
+    font-size: 30px;
+    color: #273c75;
+    margin-bottom: 5px;
+}
+
+#main h2 {
+    font-size: 20px;
+    color: #718093;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #353b48;
+    transition: transform 0.2s ease;
+}
+
+
+.main-icon {
+    width: 18px;
+    margin-right: 2px;
+}
+
+section {
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 20px;
+    background: #dad8d8;
+    border-radius: 12px;
+  
+}
+
+.section-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #273c75;
+    border-left: 3px solid #e1b12c;
+    padding-left: 10px;
+}
+
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.title-h3 {
+    font-size: 1rem;
+    color: #1e5583;
+    margin-top: 10px;
+}
+
+#proyectos .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#proyectos a {
+    color: #273c75;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#proyectos a:hover {
+    color: #e1b12c;
+ 
+}
+
+footer {
+    background: #273c75;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-redes-div img {
+    margin: 0 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+footer {
+    background: #273c75;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+  
+}
+.fa-stack {
+    margin: 5px; 
+}
+
