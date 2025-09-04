@@ -1,170 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Cristian Illanes</title>
-    <meta name="description" content="Currículum de Cristian Illanes, Técnico Superior en Sistemas Informáticos, especializado en desarrollo web con PHP, Laravel, Vue.js y MySQL.">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta
+      name="description"
+      content="Currículum de Cristian Illanes, Técnico Superior en Sistemas Informáticos, especializado en desarrollo web con PHP, Laravel, Vue.js y MySQL."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
 
-<body>
-   
-    <a href="#main-content" class="skip-link" aria-label="Ir al contenido principal">Saltar al contenido principal</a>
+  <body>
+    <header id="header">
+      <nav id="menu-nav" aria-label="Menú principal">
+        <ul id="menu-ul" class="menu-list">
+          <li><a class="menu-link" href="#inicio">Inicio</a></li>
+          <li><a class="menu-link" href="#sobre-mi">Sobre Mí</a></li>
+          <li><a class="menu-link" href="#formacion">Formación</a></li>
+          <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
+          <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+        </ul>
 
-    <header role="banner">
-        <nav id="menu-nav" role="navigation" aria-label="Menú principal">
-            <ul id="menu-ul" role="menubar">
-                <li role="none"><a role="menuitem" href="#sobre-mi">Sobre Mí</a></li>
-                <li role="none"><a role="menuitem" href="#experiencia-laboral">Experiencia</a></li>
-                <li role="none"><a role="menuitem" href="#habilidades">Habilidades</a></li>
-                <li role="none"><a role="menuitem" href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://wa.me/59170000000"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </nav>
     </header>
+  
 
     <main id="main-content" role="main">
-        <section id="main" aria-labelledby="nombre">
-            <img id="foto" src="images/B612_20240708_134954_569.jpg"  
-                 alt="Foto de Cristian Illanes" role="img" aria-label="Foto de Cristian Illanes" loading="lazy">
-            <h1 id="nombre">Cristian Mauricio Illanes Zambrano</h1>
-            <h2>Técnico Superior en Sistemas Informáticos</h2>
-            
-            <aside class="contact-info" role="complementary" aria-label="Información de contacto">
-                <ul>
-                    <li class="contact-item">
-                        <img class="main-icon" src="images/map.svg" alt="" aria-hidden="true" loading="lazy">
-                        <span>La Paz, Bolivia</span>
-                    </li>
-                    <li class="contact-item">
-                        <img class="main-icon" src="images/phone.svg" alt="" aria-hidden="true" loading="lazy">
-                        <span>+591 60108969</span>
-                    </li>
-                    <li class="contact-item">
-                        <img class="main-icon" src="images/mail.svg" alt="" aria-hidden="true" loading="lazy">
-                        <span>cristian@gmail.com</span>
-                    </li>
-                </ul>
-            </aside>
-        </section>
+      <section id="inicio"></section>
+      <section id="perfil" class="perfil-section" aria-labelledby="perfil">
+        <div class="perfil-container">
+          <img id="foto" class="perfil-foto"src="images/B612_20240708_134954_569.jpg" alt="Foto de Cristian Illanes" loading="lazy"/>
 
-        <section id="sobre-mi" aria-labelledby="sobre-mi-title">
-            <h2 id="sobre-mi-title">Sobre Mí</h2>
-            <p>
-                Mi nombre es <strong>Cristian Mauricio Illanes Zambrano</strong>, soy del departamento de La Paz y
-                actualmente trabajo como Auxiliar Desarrollador de sistemas en una empresa de informática.
-                Me especializo en el desarrollo de sistemas web utilizando tecnologías como PHP, JavaScript, Laravel y
-                Vue y bases de datos MySQL y SQL Server.
+          <div class="perfil-info">
+            <h1 id="nombre" class="perfil-nombre">
+              Cristian Mauricio Illanes Zambrano
+            </h1>
+            <h2 class="perfil-profesion">
+              Técnico Superior en Sistemas Informáticos
+            </h2>
+            <p class="perfil-descripcion">
+              Desarrollador web con experiencia en PHP, Laravel, Vue.js y bases
+              de datos MySQL. Apasionado por la ciberseguridad y el aprendizaje
+              continuo.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="sobre-mi"
+        class="sobre-mi-section"
+        aria-labelledby="sobre-mi-title">
+        <h2 id="sobre-mi-title" class="section-title">Sobre Mí</h2>
+
+        <div class="sobre-mi-cards">
+          <div class="sobre-mi-card">
+            <h3>¿Quién Soy?</h3>
             <p>
-                En mi tiempo libre disfruto aprender nuevas herramientas y metodologías relacionadas con el desarrollo
-                de software. Me interesa especialmente el área de ciberseguridad, en la cual me gustaría profundizar mis
-                conocimientos.
+              Soy un Ingeniero en Sistemas y Desarrollador Web motivado con
+              sólidos conocimientos en desarrollo de software y diseño de
+              interfaces.
             </p>
-        </section>
+          </div>
+          <div class="sobre-mi-card">
+            <h3>Mi Objetivo</h3>
+            <p>
+              Mi objetivo es seguir aprendiendo y aplicar mis conocimientos en
+              diversas áreas como Frontend y Backend, creando soluciones
+              elegantes y funcionales.
+            </p>
+          </div>
+          <div class="sobre-mi-card">
+            <h3>Mi Perfil</h3>
+            <p>
+              Me caracterizo por mi capacidad para adaptarme rápidamente a
+              nuevos entornos, con atención al detalle y compromiso con la
+              calidad.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="formacion" aria-labelledby="formacion-title">
-            <h2 id="formacion-title">Formación Académica</h2>
-            <article>
-                <h3>Universidad Adventista de Bolivia</h3>
-                <p>Ingeniería de Sistemas (Febrero 2025 - Actualidad)</p>
-            </article>
-            <article>
-                <h3>Instituto Tecnológico Ayacucho</h3>
-                <p>Sistemas Informáticos (Febrero 2015 - Diciembre 2017)</p>
-            </article>
-            <article>
-                <h3>Curso en línea Udemy</h3>
-                <p>Desarrollo de sistemas web en PHP 7 POO, MySQL, jQuery y Ajax (Enero 2019 - Febrero 2019)</p>
-            </article>
-            <article>
-                <h3>Plataforma BLUMBIT</h3>
-                <p>Curso FullStack: Desarrollo Web con Laravel 10 y Vue.js 3 (Noviembre 2024 - Enero 2025)</p>
-            </article>
-        </section>
+      <section
+        id="formacion"
+        class="formacion-section"
+        aria-labelledby="formacion-title">
 
-        <section id="experiencia-laboral" aria-labelledby="exp-title">
-            <h2 id="exp-title">Experiencia Laboral</h2>
-            <article>
-                <h3>INFOACTIVA S.R.L.</h3>
-                <h4>Auxiliar y Desarrollador de sistemas</h4>
-                <p>Julio 2019 - Actualidad</p>
-            </article>
-            <article>
-                <h3>Librería Gisbert S.A.</h3>
-                <h4>Ventas</h4>
-                <p>Junio 2015 - Octubre 2017</p>
-            </article>
-        </section>
+        <h2 id="formacion-title" class="section-title">Formación Académica</h2>
+        <article class="formacion-item">
+          <h3 class="formacion-institucion">
+            Universidad Adventista de Bolivia
+          </h3>
+          <p class="formacion-detalle">
+            Ingeniería de Sistemas (Febrero 2025 - Actualidad)
+          </p>
+        </article>
+        <article class="formacion-item">
+          <h3 class="formacion-institucion">Instituto Tecnológico Ayacucho</h3>
+          <p class="formacion-detalle">
+            Sistemas Informáticos (Febrero 2015 - Diciembre 2017)
+          </p>
+        </article>
+        <article class="formacion-item">
+          <h3 class="formacion-institucion">Curso en línea Udemy</h3>
+          <p class="formacion-detalle">
+            Desarrollo de sistemas web en PHP 7 POO, MySQL, jQuery y Ajax (Enero
+            2019 - Febrero 2019)
+          </p>
+        </article>
+        <article class="formacion-item">
+          <h3 class="formacion-institucion">Plataforma BLUMBIT</h3>
+          <p class="formacion-detalle">
+            Curso FullStack: Desarrollo Web con Laravel 10 y Vue.js 3 (Noviembre
+            2024 - Enero 2025)
+          </p>
+        </article>
+      </section>
 
-        <section id="habilidades" aria-labelledby="skills-title">
-            <h2 id="skills-title">Habilidades</h2>
-            <article>
-                <h3>Técnicas</h3>
-                <ul aria-label="Lista de habilidades técnicas">
-                    <li>PHP: Medio</li>
-                    <li>JavaScript: Medio</li>
-                    <li>Laravel: Intermedio - Avanzado</li>
-                    <li>Vue.js: Intermedio - Avanzado</li>
-                    <li>HTML y CSS: Medio</li>
-                    <li>MySQL: Medio</li>
-                    <li>Ciberseguridad: En proceso de aprendizaje</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Competencias Profesionales</h3>
-                <ul aria-label="Competencias profesionales">
-                    <li>Resolución de problemas: Alta</li>
-                    <li>Trabajo en equipo: Alta</li>
-                    <li>Adaptabilidad: Alta</li>
-                    <li>Aprendizaje continuo: Alta</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Idiomas</h3>
-                <ul aria-label="Idiomas">
-                    <li>Español: Nativo</li>
-                    <li>Inglés: Básico</li>
-                </ul>
-            </article>
-        </section>
+      <section
+        id="habilidades"
+        class="habilidades-section"
+        aria-labelledby="skills-title"
+      >
+        <h2 id="skills-title" class="section-title">Habilidades Tecnicas</h2>
+        <article class="habilidad-item">
+  
+          <ul class="habilidad-list" aria-label="Lista de habilidades técnicas">
+            <li class="habilidad" data-nivel="Medio">PHP: Medio</li>
+            <li class="habilidad" data-nivel="Medio">
+              JavaScript: Medio
+            </li>
+            <li class="habilidad" data-nivel="Medio">
+              Laravel: Intermedio - Avanzado
+            </li>
+            <li class="habilidad" data-nivel="Medio">Vue.js: Medio</li>
+            <li class="habilidad" data-nivel="Medio">HTML y CSS: Medio</li>
+            <li class="habilidad" data-nivel="Medio">MySQL: Medio</li>
+            <li class="habilidad" data-nivel="Básico">Ciberseguridad: En proceso de aprendizaje</li>
+          </ul>
+        </article>
 
-        <section id="proyectos" aria-labelledby="projects-title">
-            <h2 id="projects-title">Proyectos</h2>
-            <article>
-                <h3>Sistema de Restaurante</h3>
-                <p>Link: <a href="https://restaurant-front-blue.vercel.app/" target="_blank" aria-label="Abrir proyecto de restaurante en una nueva pestaña">restaurant-front-blue.vercel.app</a></p>
-                <p>Descripción: Sistema completo para gestión de pedidos, desarrollado en Laravel y Vue.js.</p>
-            </article>
-            <article>
-                <h3>Sistema de Gestión Infoactiva</h3>
-                <p>Link: <a href="https://infoactiva.com.bo/usuario.dwt.php" target="_blank" aria-label="Abrir proyecto Infoactiva en una nueva pestaña">infoactiva.com.bo</a></p>
-                <p>Descripción: Sistema de gestión de solicitudes para la empresa Infoactiva, incluyendo módulos administrativos y de reportes.</p>
-            </article>
-            <article>
-                <h3>Sistema de Prefacturación</h3>
-                <p>Descripción: Sistema de prefacturación automatizando cálculo de anticipos y facturas pendientes.</p>
-            </article>
-            <article>
-                <h3>Sistema de Inventario</h3>
-                <p>Descripción: Sistema de inventario desarrollado en Laravel y Vue.js, gestionando equipos de computación, stock y reportes de existencias.</p>
-            </article>
-        </section>
+       <div class="habilidades">
+    <div class="habilidades-icons">
+      <img src="images/php.png" alt="PHP" class="tech-icon" loading="lazy"/>
+      <img src="images/javascript.png" alt="JavaScript" class="tech-icon" loading="lazy"/>
+      <img src="images/laravel.png" alt="Laravel" class="tech-icon" loading="lazy"/>
+      <img src="images/vue.png" alt="Vue.js" class="tech-icon" loading="lazy"/>
+      <img src="images/mysql.png" alt="MySQL" class="tech-icon" loading="lazy"/>
+      <img src="images/html.png" alt="HTML5" class="tech-icon" loading="lazy"/>
+      <img src="images/css.png" alt="CSS3" class="tech-icon" loading="lazy"/>
+    </div>
+  </div>
+
+      </section>
+      <section
+        id="proyectos"
+        class="proyectos-section"
+        aria-labelledby="projects-title"
+      >
+        <h2 id="projects-title" class="section-title">Proyectos</h2>
+        <div class="proyectos-grid">
+          <div class="project-card">
+            <img
+              src="images/restaurante.png"
+              alt="Vista previa"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Restaurante</h3>
+              <div class="tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <p class="project-desc">
+                Sistema completo para gestión de pedidos, desarrollado en
+                Laravel y Vue.js.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://restaurant-front-blue.vercel.app/"
+                  target="_blank"
+                  class="btn"
+                  >Vista Previa</a
+                >
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/infoactiva.PNG"
+              alt="Vista previa"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Gestión Infoactiva</h3>
+              <div class="tags">
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <p class="project-desc">
+                Sistema de gestión de solicitudes para la empresa Infoactiva, incluyendo módulos administrativos y de reportes.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://infoactiva.com.bo/usuario.dwt.php/"
+                  target="_blank"
+                  class="btn"
+                  >Vista Previa</a
+                >
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/restaurante.png"
+              alt="Vista previa"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Prefacturación</h3>
+              <div class="tags">
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <p class="project-desc">
+                Sistema de prefacturación automatizando cálculo de anticipos y facturas pendientes.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://restaurant-front-blue.vercel.app/"
+                  target="_blank"
+                  class="btn"
+                  >Vista Previa</a
+                >
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/restaurante.png"
+              alt="Vista previa"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Inventario</h3>
+              <div class="tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <p class="project-desc">
+                Sistema de inventario desarrollado en Laravel y Vue.js, gestionando equipos de computación, stock y reportes de existencias.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://restaurant-front-blue.vercel.app/"
+                  target="_blank"
+                  class="btn"
+                  >Vista Previa</a
+                >
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
-    <footer role="contentinfo" aria-label="Pie de página">
-        <div class="footer-redes-div" aria-label="Redes sociales">
-            <a href="https://www.facebook.com/tuusuario" aria-label="Facebook de Cristian Illanes">
-                <img src="images/facebook.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
-            </a>
-            <a href="https://www.instagram.com/tuusuario" aria-label="Instagram de Cristian Illanes">
-                <img src="images/instagram.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
-            </a>
-            <a href="https://www.linkedin.com/in/tuusuario" aria-label="LinkedIn de Cristian Illanes">
-                <img src="images/linke.png" alt="" width="30" height="30" aria-hidden="true" loading="lazy">
-            </a>
-        </div>
-        <p>&copy; 2025 Cristian Illanes</p>
+    <footer id="footer" role="contentinfo" aria-label="Pie de página">
+      <div class="footer-redes-div" aria-label="Redes sociales">
+        <a
+          href="https://www.facebook.com/tuusuario"
+          class="social-link"
+          aria-label="Facebook de Cristian Illanes"
+        >
+          <img
+            src="images/facebook.png"
+            alt=""
+            width="30"
+            height="30"
+            class="social-icon"
+            aria-hidden="true"
+            loading="lazy"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/tuusuario"
+          class="social-link"
+          aria-label="Instagram de Cristian Illanes"
+        >
+          <img
+            src="images/instagram.png"
+            alt=""
+            width="30"
+            height="30"
+            class="social-icon"
+            aria-hidden="true"
+            loading="lazy"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tuusuario"
+          class="social-link"
+          aria-label="LinkedIn de Cristian Illanes"
+        >
+          <img
+            src="images/linke.png"
+            alt=""
+            width="30"
+            height="30"
+            class="social-icon"
+            aria-hidden="true"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Cristian Illanes</p>
     </footer>
-</body>
+  </body>
 </html>
