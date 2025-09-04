@@ -17,55 +17,69 @@
 
   <body>
     <header id="header">
-      <nav id="menu-nav" aria-label="Menú principal">
-        <ul id="menu-ul" class="menu-list">
-          <li><a class="menu-link" href="#inicio">Inicio</a></li>
-          <li><a class="menu-link" href="#sobre-mi">Sobre Mí</a></li>
-          <li><a class="menu-link" href="#formacion">Formación</a></li>
-          <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
-          <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
-        </ul>
+  <nav id="menu-nav" aria-label="Menú principal">
+    <button id="menu-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
 
-        <div class="social-icons">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            href="https://wa.me/59170000000"
-            target="_blank"
-            aria-label="WhatsApp"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-      </nav>
-    </header>
+    <ul id="menu-ul" class="menu-list">
+      <li><a class="menu-link" href="#inicio">Inicio</a></li>
+      <li><a class="menu-link" href="#sobre-mi">Sobre Mí</a></li>
+      <li><a class="menu-link" href="#formacion">Formación</a></li>
+      <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
+      <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+    </ul>
+
+
+  </nav>
+</header>
+
   
 
     <main id="main-content" role="main">
       <section id="inicio"></section>
-      <section id="perfil" class="perfil-section" aria-labelledby="perfil">
-        <div class="perfil-container">
-          <img id="foto" class="perfil-foto"src="images/B612_20240708_134954_569.jpg" alt="Foto de Cristian Illanes" loading="lazy"/>
 
-          <div class="perfil-info">
-            <h1 id="nombre" class="perfil-nombre">
-              Cristian Mauricio Illanes Zambrano
-            </h1>
-            <h2 class="perfil-profesion">
-              Técnico Superior en Sistemas Informáticos
-            </h2>
-            <p class="perfil-descripcion">
-              Desarrollador web con experiencia en PHP, Laravel, Vue.js y bases
-              de datos MySQL. Apasionado por la ciberseguridad y el aprendizaje
-              continuo.
-            </p>
-          </div>
-        </div>
-      </section>
+<section id="perfil" class="perfil-section" aria-labelledby="perfil">
+  <div class="perfil-container">
+    <img
+      id="foto"
+      class="perfil-foto"
+      src="images/B612_20240708_134954_569.jpg"
+      alt="Foto de Cristian Illanes"
+      loading="lazy"
+    />
+
+    <div class="perfil-info">
+      <h1 id="nombre" class="perfil-nombre">
+        Cristian Mauricio Illanes Zambrano
+      </h1>
+      <h2 class="perfil-profesion">
+        Técnico Superior en Sistemas Informáticos
+      </h2>
+      <p class="perfil-descripcion">
+        Desarrollador web con experiencia en PHP, Laravel, Vue.js y bases
+        de datos MySQL. Apasionado por la ciberseguridad y el aprendizaje
+        continuo.
+      </p>
+
+      <!-- ICONOS DE REDES SOCIALES -->
+      <div class="perfil-redes">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.png" alt="Facebook" width="30" height="30" />
+        </a>
+        <a href="https://wa.me/59170000000" target="_blank" aria-label="WhatsApp">
+          <img src="images/whats.png" alt="WhatsApp" width="30" height="30" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linke.png" alt="LinkedIn" width="30" height="30" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section
         id="sobre-mi"
@@ -140,7 +154,7 @@
       <section
         id="habilidades"
         class="habilidades-section"
-        aria-labelledby="skills-title"
+        aria-labelledby="habilidades-section"
       >
         <h2 id="skills-title" class="section-title">Habilidades Tecnicas</h2>
         <article class="habilidad-item">
@@ -365,4 +379,13 @@
       <p class="footer-copy">&copy; 2025 Cristian Illanes</p>
     </footer>
   </body>
+
+  <script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu-ul');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 </html>
