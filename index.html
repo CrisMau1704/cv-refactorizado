@@ -16,77 +16,105 @@
   </head>
 
   <body>
-    
     <header id="header">
-  <nav id="menu-nav" aria-label="Menú principal">
-    <button id="menu-toggle" aria-label="Abrir menú">
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </button>
+      <nav id="menu-nav" aria-label="Menú principal">
+        <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
 
-    <ul id="menu-ul" class="menu-list">
-      <li><a class="menu-link" href="#inicio">Inicio</a></li>
-      <li><a class="menu-link" href="#sobre-mi">Sobre Mí</a></li>
-      <li><a class="menu-link" href="#formacion">Formación</a></li>
-      <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
-      <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
-    </ul>
-
-
-  </nav>
-</header>
-
-  
+        <ul id="menu-ul" class="menu-list">
+          <li><a class="menu-link" href="#inicio">Inicio</a></li>
+          <li><a class="menu-link" href="#sobre-mi">Sobre Mí</a></li>
+          <li><a class="menu-link" href="#formacion">Formación</a></li>
+          <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
+          <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main id="main-content" role="main">
-      <section id="inicio"></section>
+      <section id="inicio" aria-label="Inicio del CV">
+        <h2 class="sr-only">Inicio del CV</h2>
+      </section>
 
-<section id="perfil" class="perfil-section" aria-labelledby="nombre">
+      <section id="perfil" class="perfil-section" aria-labelledby="nombre">
+        <div class="perfil-container">
+          <img
+            id="foto"
+            class="perfil-foto"
+            src="images/B612_20240708_134954_569.jpg"
+            alt="Foto de Cristian Illanes"
+            loading="lazy"
+          />
 
-  <div class="perfil-container">
-    <img
-      id="foto"
-      class="perfil-foto"
-      src="images/B612_20240708_134954_569.jpg"
-      alt="Foto de Cristian Illanes"
-      loading="lazy"
-    />
+          <div class="perfil-info">
+            <h1 id="nombre" class="perfil-nombre">
+              Cristian Mauricio Illanes Zambrano
+            </h1>
+            <h2 class="perfil-profesion">
+              Técnico Superior en Sistemas Informáticos
+            </h2>
+            <p class="perfil-descripcion">
+              Desarrollador web con experiencia en PHP, Laravel, Vue.js y bases
+              de datos MySQL. Apasionado por la ciberseguridad y el aprendizaje
+              continuo.
+            </p>
 
-    <div class="perfil-info">
-      <h1 id="nombre" class="perfil-nombre">
-        Cristian Mauricio Illanes Zambrano
-      </h1>
-      <h2 class="perfil-profesion">
-        Técnico Superior en Sistemas Informáticos
-      </h2>
-      <p class="perfil-descripcion">
-        Desarrollador web con experiencia en PHP, Laravel, Vue.js y bases
-        de datos MySQL. Apasionado por la ciberseguridad y el aprendizaje
-        continuo.
-      </p>
-
-      <!-- ICONOS DE REDES SOCIALES -->
-      <div class="perfil-redes">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <img src="images/facebook.png" alt="Facebook" width="30" height="30" />
-        </a>
-        <a href="https://wa.me/59170000000" target="_blank" aria-label="WhatsApp">
-          <img src="images/whats.png" alt="WhatsApp" width="30" height="30" />
-        </a>
-        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-          <img src="images/linke.png" alt="LinkedIn" width="30" height="30" />
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div class="perfil-redes">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img
+                  src="images/facebook.png"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a
+                href="https://wa.me/59170000000"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <img
+                  src="images/whats.png"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <img
+                  src="images/linke.png"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         id="sobre-mi"
         class="sobre-mi-section"
-        aria-labelledby="sobre-mi-title">
+        aria-labelledby="sobre-mi-title"
+      >
         <h2 id="sobre-mi-title" class="section-title">Sobre Mí</h2>
 
         <div class="sobre-mi-cards">
@@ -120,8 +148,8 @@
       <section
         id="formacion"
         class="formacion-section"
-        aria-labelledby="formacion-title">
-
+        aria-labelledby="formacion-title"
+      >
         <h2 id="formacion-title" class="section-title">Formación Académica</h2>
         <article class="formacion-item">
           <h3 class="formacion-institucion">
@@ -154,37 +182,92 @@
       </section>
 
       <section
-  id="habilidades"
-  class="habilidades-section"
-  aria-labelledby="skills-title"
->
-  <h2 id="skills-title" class="section-title">Habilidades Técnicas</h2>
-  
-  <article class="habilidad-item">
-    <ul class="habilidad-list" aria-label="Lista de habilidades técnicas">
-      <li class="habilidad" data-nivel="Medio">PHP: Medio</li>
-      <li class="habilidad" data-nivel="Medio">JavaScript: Medio</li>
-      <li class="habilidad" data-nivel="Medio">Laravel: Intermedio - Avanzado</li>
-      <li class="habilidad" data-nivel="Medio">Vue.js: Medio</li>
-      <li class="habilidad" data-nivel="Medio">HTML y CSS: Medio</li>
-      <li class="habilidad" data-nivel="Medio">MySQL: Medio</li>
-      <li class="habilidad" data-nivel="Básico">Ciberseguridad: En proceso de aprendizaje</li>
-    </ul>
-  </article>
+        id="habilidades"
+        class="habilidades-section"
+        aria-labelledby="skills-title"
+      >
+        <h2 id="skills-title" class="section-title">Habilidades Técnicas</h2>
 
-  <div class="habilidades">
-    <<div class="habilidades-icons" role="list" aria-label="Iconos de tecnologías que manejo">
+        <article class="habilidad-item">
+          <ul class="habilidad-list" aria-label="Lista de habilidades técnicas">
+            <li class="habilidad" data-nivel="Intermedio - Avanzado">
+              PHP: Medio
+            </li>
+            <li class="habilidad" data-nivel="Medio">JavaScript: Medio</li>
+            <li class="habilidad" data-nivel="Medio">
+              Laravel: Intermedio - Avanzado
+            </li>
+            <li class="habilidad" data-nivel="Intermedio - Avanzado">
+              Vue.js: Medio
+            </li>
+            <li class="habilidad" data-nivel="Medio">HTML y CSS: Medio</li>
+            <li class="habilidad" data-nivel="Intermedio - Avanzado">
+              MySQL: Medio
+            </li>
+            <li class="habilidad" data-nivel="Básico">
+              Ciberseguridad: En proceso de aprendizaje
+            </li>
+          </ul>
+        </article>
 
-      <img src="images/php.png" alt="PHP" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/javascript.png" alt="JavaScript" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/laravel.png" alt="Laravel" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/vue.png" alt="Vue.js" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/mysql.png" alt="MySQL" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/html.png" alt="HTML5" class="tech-icon" loading="lazy" role="listitem"/>
-      <img src="images/css.png" alt="CSS3" class="tech-icon" loading="lazy" role="listitem"/>
-    </div>
-  </div>
-</section>
+        <div class="habilidades">
+          <div
+            class="habilidades-icons"
+            role="list"
+            aria-label="Iconos de tecnologías que manejo"
+          >
+            <img
+              src="images/php.png"
+              alt="PHP"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/javascript.png"
+              alt="JavaScript"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/laravel.png"
+              alt="Laravel"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/vue.png"
+              alt="Vue.js"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/mysql.png"
+              alt="MySQL"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/html.png"
+              alt="HTML5"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+            <img
+              src="images/css.png"
+              alt="CSS3"
+              class="tech-icon"
+              loading="lazy"
+              role="listitem"
+            />
+          </div>
+        </div>
+      </section>
 
       <section
         id="proyectos"
@@ -196,8 +279,9 @@
           <div class="project-card">
             <img
               src="images/restaurante.png"
-              alt="restaurante"
+              alt="vista previa del sistema de restaurante"
               class="project-img"
+              loading="lazy"
             />
             <div class="project-info">
               <h3 class="project-title">Sistema de Restaurante</h3>
@@ -221,6 +305,7 @@
                   href="https://github.com/"
                   target="_blank"
                   class="btn btn-secondary"
+                  aria-label="Ver código de Sistema de Restaurante en GitHub"
                   >GitHub</a
                 >
               </div>
@@ -228,9 +313,10 @@
           </div>
           <div class="project-card">
             <img
-              src="images/infoactiva.PNG"
-              alt="infoactiva"
+              src="images/infoactiva.png"
+              alt="vista previa del sistema web de infoactiva"
               class="project-img"
+              loading="lazy"
             />
             <div class="project-info">
               <h3 class="project-title">Sistema de Gestión Infoactiva</h3>
@@ -240,7 +326,8 @@
                 <span class="tag">MySQL</span>
               </div>
               <p class="project-desc">
-                Sistema de gestión de solicitudes para la empresa Infoactiva, incluyendo módulos administrativos y de reportes.
+                Sistema de gestión de solicitudes para la empresa Infoactiva,
+                incluyendo módulos administrativos y de reportes.
               </p>
               <div class="project-links">
                 <a
@@ -253,6 +340,7 @@
                   href=""
                   target="_blank"
                   class="btn btn-secondary"
+                  aria-label="Ver código de Sistema de Restaurante en GitHub"
                   >GitHub</a
                 >
               </div>
@@ -260,9 +348,10 @@
           </div>
           <div class="project-card">
             <img
-              src="images/restaurantes.png"
-              alt="sistema prefacturación"
+              src="images/facturacion.png"
+              alt="vista previa del sistema de  prefacturación"
               class="project-img"
+              loading="lazy"
             />
             <div class="project-info">
               <h3 class="project-title">Sistema de Prefacturación</h3>
@@ -272,19 +361,16 @@
                 <span class="tag">MySQL</span>
               </div>
               <p class="project-desc">
-                Sistema de prefacturación automatizando cálculo de anticipos y facturas pendientes.
+                Sistema de prefacturación automatizando cálculo de anticipos y
+                facturas pendientes.
               </p>
               <div class="project-links">
-                <a
-                  href=""
-                  target="_blank"
-                  class="btn"
-                  >Vista Previa</a
-                >
+                <a href="" target="_blank" class="btn">Vista Previa</a>
                 <a
                   href="https://github.com/"
                   target="_blank"
                   class="btn btn-secondary"
+                  aria-label="Ver código de Sistema de Restaurante en GitHub"
                   >GitHub</a
                 >
               </div>
@@ -292,9 +378,10 @@
           </div>
           <div class="project-card">
             <img
-              src="images/restaurantessss.png"
-              alt="sistema de inventarios"
+              src="images/inventarios.png"
+              alt="vista previa del sistema de inventarios"
               class="project-img"
+              loading="lazy"
             />
             <div class="project-info">
               <h3 class="project-title">Sistema de Inventario</h3>
@@ -304,25 +391,22 @@
                 <span class="tag">MySQL</span>
               </div>
               <p class="project-desc">
-                Sistema de inventario desarrollado en Laravel y Vue.js, gestionando equipos de computación, stock y reportes de existencias.
+                Sistema de inventario desarrollado en Laravel y Vue.js,
+                gestionando equipos de computación, stock y reportes de
+                existencias.
               </p>
               <div class="project-links">
-                <a
-                  href=""
-                  target="_blank"
-                  class="btn"
-                  >Vista Previa</a
-                >
+                <a href="" target="_blank" class="btn">Vista Previa</a>
                 <a
                   href="https://github.com/"
                   target="_blank"
                   class="btn btn-secondary"
+                  aria-label="Ver código de Sistema de Restaurante en GitHub"
                   >GitHub</a
                 >
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </main>
@@ -380,11 +464,14 @@
   </body>
 
   <script>
-  const toggleButton = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu-ul');
+    const toggleButton = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-ul");
 
-  toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
-</script>
+    toggleButton.addEventListener("click", () => {
+      const expanded =
+        toggleButton.getAttribute("aria-expanded") === "true" || false;
+      toggleButton.setAttribute("aria-expanded", !expanded);
+      menu.classList.toggle("active");
+    });
+  </script>
 </html>

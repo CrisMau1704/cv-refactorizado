@@ -366,7 +366,7 @@ body {
 }
 
 .formacion-section .section-title::after {
- content: "";
+  content: "";
   display: block;
   width: 100%;
   height: 3px;
@@ -374,7 +374,6 @@ body {
   margin: 12px auto 0 auto;
   border-radius: 2px;
 }
-
 
 .formacion-section::before {
   content: "";
@@ -405,15 +404,14 @@ body {
   box-shadow: 0 10px 25px rgba(0, 234, 255, 0.6);
 }
 
-
 .formacion-item:nth-child(odd) {
   float: left;
-  clear: both;
+ 
 }
 
 .formacion-item:nth-child(even) {
   float: right;
-  clear: both;
+
 }
 
 .formacion-section::after {
@@ -421,7 +419,6 @@ body {
   display: table;
   clear: both;
 }
-
 
 .formacion-item::before {
   content: "";
@@ -442,7 +439,7 @@ body {
   left: -54px;
 }
 
-/* Contenido */
+
 .formacion-institucion {
   font-size: 1.4rem;
   font-weight: 700;
@@ -461,6 +458,63 @@ body {
   color: var(--text-dark);
   font-style: italic;
 }
+
+@media (max-width: 992px) {
+  .formacion-section {
+    padding: 60px 6%;
+  }
+
+  .formacion-section::before {
+    left: 20px; 
+    transform: none;
+  }
+
+  .formacion-item {
+    width: 90%;
+    float: none;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .formacion-item::before {
+    left: -34px;
+    right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .formacion-section {
+    padding: 40px 20px;
+  }
+
+  .formacion-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .formacion-item {
+    padding: 18px 20px;
+    margin-left: 30px;
+  }
+
+  .formacion-item::before {
+    left: -26px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .formacion-institucion {
+    font-size: 1.2rem;
+  }
+
+  .formacion-grado {
+    font-size: 1rem;
+  }
+
+  .formacion-fecha {
+    font-size: 0.85rem;
+  }
+}
+
 
 .habilidades-section {
   width: 100%;
@@ -639,7 +693,7 @@ body {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 1px solid #00eaff;
+  border-bottom: 1px solid var(--accent);
   transition: transform 0.3s ease;
 }
 
@@ -713,7 +767,7 @@ body {
 }
 
 .btn:hover {
-  background: #00bcd4;
+  background: var(--accent);
 }
 
 .btn-secondary {
@@ -743,6 +797,10 @@ body {
   .project-links {
     flex-direction: column;
   }
+}
+
+@media (max-width: 480px){
+  .project-card{ box-shadow: 0 3px 8px rgba(0,0,0,.25); }
 }
 
 
